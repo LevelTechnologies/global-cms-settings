@@ -273,8 +273,16 @@ textarea:focus {
 
 label {
   font-family: var(--font-tertiary);
+  font-size: 14px;
   text-transform: uppercase;
-  font-weight: 600;
+  font-weight: 500;
+}
+
+input[type="checkbox"] {
+  min-height: auto;
+}
+input[type="checkbox"] + label {
+  text-transform: unset;
 }
 
 /* =========================
