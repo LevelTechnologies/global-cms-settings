@@ -214,6 +214,7 @@ COLOR UTILITIES
 /* =========================
 BUTTON BASE
 ========================= */
+.button,
 button {
   font-family: var(--font-tertiary);
   font-weight: 500;
@@ -228,24 +229,29 @@ button {
   height: 40px;
 }
 
+.button.action,
 button.action {
   background-color: var(--color-action);
   color: var(--color-secondary);
 }
 
+.button.grey,
 button.grey {
-  background-color: var(--color-grey);
+  background-color: var(--color-grey-light);
   color: var(--color-secondary);
 }
 
+.button.full,
 button.full {
   width: 100%;
 }
 
+.button:hover,
 button:hover {
   opacity: 0.8;
 }
 
+.button:disabled,
 button:disabled {
   opacity: 0.6;
   cursor: not-allowed;
