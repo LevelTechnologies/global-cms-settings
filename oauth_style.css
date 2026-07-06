@@ -5,7 +5,14 @@ ROOT VARIABLES
   /* Brand */
   --color-primary: #0d0c38;
   --color-secondary: #171333;
-  --color-accent: #45d9ff;
+  /* Use sport accent - not leveltech */
+  /* secondary: '#D83232', // secondary-500
+    highlight: '#2250FF', // highlight-500
+    action: '#FFCA3B', // action-500 */
+  /* --color-accent: #45d9ff;  */
+
+  --color-action: #ffca3b;
+  --color-accent: #2250ff;
   --color-errror: #ff485e;
 
   /* Text */
@@ -221,6 +228,20 @@ button {
   height: 40px;
 }
 
+button.action {
+  background-color: var(--color-action);
+  color: var(--color-secondary);
+}
+
+button.grey {
+  background-color: var(--color-grey);
+  color: var(--color-secondary);
+}
+
+button.full {
+  width: 100%;
+}
+
 button:hover {
   opacity: 0.8;
 }
@@ -332,4 +353,14 @@ Or Divider
 
 .or-divider::after {
   margin-left: var(--spacing-sm);
+}
+
+.brand-logo {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 16px auto;
+  width: 100%;
+  max-width: 300px;
 }
