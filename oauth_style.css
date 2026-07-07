@@ -104,10 +104,13 @@ h2 {
 }
 
 h3 {
-  font-size: 1.5rem;
+  font-size: 0.9rem;
+  font-weight: 500;
+  text-transform: uppercase;
   color: var(--color-secondary);
   text-align: center;
   font-family: var(--font-tertiary);
+  padding: 0.5rem 0;
 }
 
 h4 {
@@ -227,6 +230,7 @@ button {
   color: var(--color-white);
   text-transform: uppercase;
   height: 40px;
+  transition: all 0.2s ease;
 }
 
 .button.action,
@@ -249,6 +253,13 @@ button.full {
 .button:hover,
 button:hover {
   opacity: 0.8;
+  text-decoration: none;
+}
+
+.button.grey:hover,
+button.grey:hover {
+  opacity: 0.8;
+  background-color: var(--color-grey);
 }
 
 .button:disabled,
@@ -278,11 +289,11 @@ select,
 textarea {
   width: 100%;
   padding: var(--spacing-sm);
-  border: 1px solid var(--color-grey);
+  border: 1px solid white;
   border-radius: var(--border-radius);
   font-family: var(--font-);
   color: var(--color-text);
-  background-color: var(--color-grey-light);
+  background-color: white;
   min-height: 40px;
 }
 
@@ -369,4 +380,63 @@ Or Divider
   margin: 16px auto;
   width: 100%;
   max-width: 300px;
+}
+
+/* =========================
+Details / Summary
+========================= */
+summary {
+  list-style: none;
+  font-family: var(--font-tertiary);
+  font-weight: 500;
+  color: var(--color-grey);
+  text-align: center;
+}
+
+summary::-webkit-details-marker {
+  display: none;
+}
+
+details {
+  padding: 0 0 1rem 0;
+}
+
+.visually-hidden {
+  border: 0;
+  clip-path: inset(50%);
+  height: 1px;
+  margin: 0;
+  overflow: hidden;
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+}
+
+.accept {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+
+.confirm {
+  font-size: 1rem;
+  color: var(--color-secondary);
+  margin-bottom: 0;
+  display: flex;
+  justify-content: center;
+}
+
+.accept button {
+  flex-basis: 50%;
+  margin-bottom: 1rem;
+}
+
+.brand-partner {
+  padding: 2rem 0;
+}
+
+small {
+  display: block;
+  margin-bottom: 0.5rem;
 }
